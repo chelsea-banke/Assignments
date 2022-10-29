@@ -1,0 +1,113 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lexend Deca';
+  color: hsla(0, 0%, 100%, 0.75);
+}
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.card{
+  width: 20vw;
+  padding: 40px;
+}
+h2{
+  font-size: xx-large;
+}
+p{
+  width: 90%;
+  line-height: 25px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+button{
+  padding: 15px 20px 15px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  font-size: medium;
+  font-weight: bold;
+}
+#sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+#sedans button{
+  color: hsl(31, 77%, 52%);
+}
+#suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+#suvs button{
+  color: hsl(184, 100%, 22%); 
+}
+#luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+#luxury button{
+  color: hsl(179, 100%, 13%);
+}
+.link{
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid green;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  width: fit-content;
+}
+.link a{
+  text-decoration: none;
+  padding: 20px;
+}
+
+#grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  width: 400px;
+  height: 400px;
+  grid-gap: 5px;
+  margin: auto;
+  margin-top: 100px;
+}
+#red{
+  grid-column: 1/span 3;
+  grid-row: 1/span 2;
+  background-color: #ff2424;
+}
+#green{
+  grid-column: 1/span 2;
+  grid-row: 3/span 2;
+  background-color: #05ff50;
+}
+#orange{
+  grid-column: 4/span 2;
+  background-color: #ffb224;
+  grid-row: 1/span 2;
+}
+.blue{
+  grid-column: 3/-1;
+  background-color: #608ed7;
+}
+@media only screen and (max-width: 800px){
+  section{
+    width: 80%;
+  }
+  .card{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px){
+  #grid-container{
+    width: 80vw;
+    height: 80vw;
+    grid-gap: 3px;
+  }
+}

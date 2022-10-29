@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>register</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Register Today !</h1>
+  <form action="success.html">
+    <div id="names">
+      <input type="text" placeholder="first name" required>
+      <input type="text" placeholder="last name" required> 
+    </div>
+    <div>
+      <label for="tel">Phone number</label>
+      <input type="tel" id="tel" placeholder="+xxx-xxx-xxx-xxx" required> 
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="example@gmail.com" required>
+    </div>
+    <div>
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="notSay">rether not say</option>
+      </select>
+    </div>
+    <div>
+      <label for="DoB">Date of birth</label>
+      <input type="date" id="DoB" required></input>
+    </div>
+    <div>
+      <label for="favColor">Favorite color</label>
+      <input type="color" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a href="./login.html">login</a></p>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

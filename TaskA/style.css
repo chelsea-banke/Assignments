@@ -1,0 +1,196 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #96d4ce;
+  scroll-behavior: smooth;
+}
+/* header{
+  box-shadow: 0px 0px 10px 0px grey;
+} */
+
+nav{
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+h1, nav{
+  padding: 5px;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #757575;
+  border: 1px solid #9ad7d0;
+  display: inline;
+  height: 25%;
+  mrgin: 5px;
+  font-weight: bold;
+}
+#contact{
+  color: #99d6d0;
+}
+section{
+  margin-top: 50px;
+}
+#landing{
+/*   margin-top: 120px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#landing div{
+  margin: auto;
+}
+#intro{
+/*   background-color: #e0e0e0; */
+  padding: 10px;
+  color: white;
+}
+#intro h2{
+  font-size: 80px;
+  margin-top: -20px;
+}
+figcaption{
+  font-size: xx-large;
+}
+section h2{
+  font-size: 80px;
+  margin: auto;
+  text-align: center;
+}
+
+#about div{
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+}
+#main{
+  text-align: center;
+}
+section{
+  height: 90vh;
+  padding-top: 20px;
+}
+#about{
+  height: fit-content;
+}
+#about, #services{
+  background-color: white;
+}
+.green {
+  border: 2px solid #96d4ce;
+}
+.white {
+  border: 2px solid #ffffff;
+}
+#about h2, #services h2{
+  color: #757575;
+}
+
+.inSec h3{
+  color: #96d4ce;
+  margin: auto;
+  text-align: center;
+}
+ul{
+/*   text-decoration: none; */
+  list-style: none;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #96d4ce;
+  font-size: large;
+  width: fit-content;
+  margin: auto;
+}
+li{
+  border-bottom: 1px dotted black;
+  margin-bottom: 20px;
+  color: black;
+}
+li span{
+  float: right;
+  color: white;
+}
+
+#projects div, #skills div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #96d4ce;
+  flex-wrap: wrap;
+}
+#projects h2, #skills h2{
+  color: white;
+}
+#projects div h3, #skills div h3{
+  width: 50vw;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #96d4ce;
+  text-align: center;
+  font-size: x-large;
+}
+h3 a{
+  text-decoration: none;
+}
+
+#services div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#services div h3{
+  width: 40vw;
+  color: white;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  font-size: xx-large; 
+  background-color: #9ad7d0;
+  text-align: center;
+}
+img{
+ width: 100%;  
+}
+footer{
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+  background-color: white; 
+  margin-top: 50px;
+}
+footer div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+}
+footer a img {
+  width: 30px; 
+}
+@media only screen and (max-width: 450px){
+  #services div h3{
+    width: 80vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  ul{
+    width: 71vw;
+    margin: auto;
+  }
+}
